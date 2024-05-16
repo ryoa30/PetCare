@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Assets/Logo-PetCare.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/register.css">
+    <title>PetCare</title>
+</head>
+
+<body>
+    <div class="Form-Register">
+        <h1>Buat Akun Baru</h1>
+        <div class="Form">
+            <form action="" id="registform" >
+                <div class="user-box">
+                    <label>Nama Lengkap</label>
+                    <input type="text" name="nama" id="name">
+                </div>
+                <div class="user-box">
+                    <label>Date</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div class="user-box">
+                    <label>Gender</label>
+                    <select name="gender" id="gender">
+                        <option value="empty"></option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="user-box">
+                    <label>Nomor Handphone</label>
+                    <input type="text" name="nohp" id="phonenumber">
+                </div>
+                <div class="user-box">
+                    <label>Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="user-box">
+                    <label>Password</label>
+                    <input type="password" name="password" required="" id="pass">
+                </div>
+                <div class="user-box">
+                    <label>Confirm Password</label>
+                    <input type="password" name="conpassword" required="" id="conpass">
+                </div>
+                <div class="Submit-form">
+                    <button type="submit" onclick="validationform()">REGISTER</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="pop-up" id="pop-up">
+        <img src="../Assets/tick.jpg" alt="">
+        <h1>Thank you for Register</h1>
+    </div>
+    <div class="pop-up" id="pop-up-cross">
+        <h1>All field can't be empty</h1>
+        <button type="button" onclick="closepopupcross()">OK</button>
+    </div>
+    <div class="pop-up" id="pop-up-email">
+        <h1>Email always end with @gmail.com</h1>
+        <button type="button" onclick="closepopupemail()">OK</button>
+    </div>
+    <div class="pop-up" id="pop-up-password">
+        <h1>Passwords must be at least 8 characters long and start with uppercase letters!</h1>
+        <button type="button" onclick="closepopuppass()">OK</button>
+    </div>
+    <div class="pop-up" id="pop-up-conpassword">
+        <h1>Password do not match</h1>
+        <button type="button" onclick="closepopupconpass()">OK</button>
+    </div>
+
+    <script src="../JS/register.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../Assets/BG-Login.jpg');
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.Form-Login{
+    margin-top: 150px;
+    width: 400px;
+    background-color: white;
+    flex-direction: column;
+}
+
+.pop-up{
+    width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: black;
+    visibility: hidden;
+}
+
+.openpopup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.pop-up img{
+    width: 200px;
+    margin-bottom: -50px;
+}
+
+.pop-up button{
+    padding: 10px 30px 10px 30px;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.Form-Login h1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.Form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-box label{
+    display: block;
+    margin: 10px 0 0 0;
+}
+
+.user-box input{
+    display: block;
+    margin-top: 10px;
+    width: 250px;
+    height: 2%;
+}
+
+.Submit-form{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Submit-form button{
+    padding: 10px 30px 10px 30px;
+    background-color: #50C4ED;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.Submit-form button:hover{
+    background-color: #333A73;
+    transition: 0.2s ease-in;
+}
+
+.Submit-form p{
+    margin-top: 20px;
+}
+
+.Submit-form span{
+    color: #50C4ED;
+    cursor: pointer;
+}
+
+/*Responsive tools Tablet*/
+@media screen and (min-width: 768px){
+    nav ul{
+        width: 50%;
+    }
+}
+
+/*Responsive tools Hp*/
+@media screen and (max-width: 768px){
+    .garis-tiga{
+        display: flex;
+    }
+    nav ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        z-index: -1;
+        background-color: #FBA834;
+        transition: all .2s;
+        transform: translateX(100%);
+        opacity: 0;
+
+    }
+    nav ul.muncul-responsive{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

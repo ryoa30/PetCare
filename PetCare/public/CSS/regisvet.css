@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../Assets/BG-Login.jpg');
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.Form-groom{
+    margin-top: 150px;
+    width: 500px;
+    background-color: white;
+    flex-direction: column;
+}
+
+.Form-groom h1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.Form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-box{
+    display: grid;
+    place-items: center;
+    /* height: 100%;
+    width: 100%; */
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.user-box #File{
+    display: inline-block;
+    margin-top: 15px;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 300px;
+    padding: 15px 40px;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 10px;
+}
+
+.user-box #File:active{
+    transform: scale(0.9);
+}
+
+.Submit-form{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Submit-form button{
+    padding: 10px 30px 10px 30px;
+    margin-bottom: 30px;
+    background-color: #50C4ED;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.Submit-form button:hover{
+    background-color: #333A73;
+    transition: 0.2s ease-in;
+}
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Login.css">
+    <link rel="shortcut icon" href="../Assets/Logo-PetCare.png" type="image/x-icon">
+    <title>PetCare</title>
+</head>
+
+<body>
+    <div class="Form-Login">
+        <h1>Masuk ke Akun Anda</h1>
+        <div class="Form">
+            <form action="">
+                <div class="user-box">
+                    <label id="email">Email</label>
+                    <input type="email" name="email" required="">
+                </div>
+                <div class="user-box">
+                    <label id="password">Password</label>
+                    <input type="password" name="password" required="">
+                </div>
+                    <div class="Submit-form">
+                        <button type="submit">LOGIN</button>
+                        <p>Belum Punya Akun? <span onclick="pindahhalaman('/register')">Buat Akun Baru</span>
+                    </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="pop-up" id="pop-up">
+        <img src="../Assets/tick.jpg" alt="">
+        <h1>Login Success</h1>
+    </div>
+    <div class="pop-up" id="pop-up-cross">
+        <h1>Email or password incorrect</h1>
+        <button type="button" onclick="closepopupcross()">OK</button>
+    </div>
+    <div class="pop-up" id="pop-up-email">
+        <h1>Email always end with @gmail.com</h1>
+        <button type="button" onclick="closepopupemail()">OK</button>
+    </div>
+    <div class="pop-up" id="pop-up-password">
+        <h1>Passwords must be at least 8 characters long and start with uppercase letters!</h1>
+        <button type="button" onclick="closepopuppass()">OK</button>
+    </div>
+
+    <script src="../JS/login.js"></script>
+    <script src="../JS/index.js"></script>
+</body>
+
+</html>
